@@ -9,6 +9,7 @@ import lombok.Setter;
  * @author linxu
  */
 @Data
+@Deprecated//member ship can not use
 public class Result {
 
     public static final int FAIL = 0;

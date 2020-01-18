@@ -9,6 +9,7 @@ import com.qgailab.raftkv.common.Peer;
  *
  * @author linxu
  */
+@Deprecated//member ship cannot used
 public interface ClusterMembershipChanges {
 
     /**

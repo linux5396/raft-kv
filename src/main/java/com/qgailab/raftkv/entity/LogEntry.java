@@ -18,7 +18,8 @@ public class LogEntry implements Serializable, Comparable {
      */
     private long term;
     /**
-     * 命令
+     * K-V命令,该命令不用于一致性同步，而是用于键值存储
+     * @see  Command
      */
     private Command command;
 

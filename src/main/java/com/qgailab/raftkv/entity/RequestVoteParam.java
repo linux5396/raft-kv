@@ -1,12 +1,15 @@
 package com.qgailab.raftkv.entity;
 
 
+import lombok.Data;
+
 /**
  * @author linxu
  * @date 2020/1/18
  * <tip>take care of yourself.everything is no in vain.</tip>
  * 请求投票的参数实体，包含候选人ID、候选人任期号码、候选人的索引、候选人的日志任期号码、接收者ID。
  */
+@Data
 public class RequestVoteParam extends BaseParam {
     /**
      * 候选人ID
@@ -28,6 +31,10 @@ public class RequestVoteParam extends BaseParam {
         setLastLogTerm(builder.lastLogTerm);
         setServerId(builder.serverId);
         setTerm(builder.term);
+    }
+
+    public static Builder newBuilder() {
+        return new Builder();
     }
 
     @Override

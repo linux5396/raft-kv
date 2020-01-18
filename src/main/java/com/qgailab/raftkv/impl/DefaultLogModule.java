@@ -41,12 +41,10 @@ public class DefaultLogModule implements LogModule {
 
     ReentrantLock lock = new ReentrantLock();
 
-    //TODO System.getProperty("serverPort"); may change to file load.
+    //TODO
     static {
-        dbDir = "./raft_kv_root/" + System.getProperty("serverPort");
-        if (logsDir == null) {
-            logsDir = dbDir + "/log";
-        }
+        dbDir = "./raft_kv_root/";
+        logsDir = dbDir + "/log";
         RocksDB.loadLibrary();
     }
 

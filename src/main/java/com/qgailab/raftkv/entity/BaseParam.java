@@ -15,11 +15,11 @@ public class BaseParam implements Serializable {
      * ip:port
      * </p>
      */
-     String serverId;
+    String serverId;
     /**
      * 候选者的任期号码,candidateId.
      */
-     long term;
+    long term;
 
     public String getServerId() {
         return serverId;

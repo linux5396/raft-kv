@@ -31,6 +31,14 @@ public class AppendResult implements Serializable {
         this.success = success;
     }
 
+    public static AppendResult fail() {
+        return new AppendResult(false);
+    }
+
+    public static AppendResult ok() {
+        return new AppendResult(true);
+    }
+
     public AppendResult(Builder builder) {
         setTerm(builder.term);
         setSuccess(builder.success);
