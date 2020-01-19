@@ -12,7 +12,7 @@
 
 ## 设计模式
 - Builder模式、内部静态类懒加载单例模式、模板方法原则等
-- 
+
 ## 使用说明
 
 clone该库，跑多个副本，修改RaftBoostrap的地址配置即可，启动之后，查看控制台，有详细的日志信息。如果想使用其中的K-V存储功能，只需要用Request类对命令进行包装，并且new DefaultRpcClient().send()即可。
